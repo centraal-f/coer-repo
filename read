@@ -1,0 +1,15 @@
+Instalar Java
+sudo apt-get -y install default-jdk
+java -version
+
+ejecutar comando en background
+
+cd ~      # this takes us to /home/lfcorrear
+mkdir bin # this creates /home/lfcorrear/bin
+export PATH=$PATH:/home/lfcorrear/bin
+cd bin
+touch labo-coer
+vi labo-coer
+	#!/bin/bash
+	nohup java -jar labo-corentine-menu-fhm.jar > labo-corentine-fhm-beat.out 2>&1&
+chmod u+x labo-coer
