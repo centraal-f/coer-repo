@@ -33,7 +33,7 @@ public class PQRSBeat {
 
 				System.out.println("Beating...");
 				long start = Calendar.getInstance().getTimeInMillis();
-				URL obj = new URL("https://us-central1-labo-corentine.cloudfunctions.net/fhm-beat");
+				URL obj = new URL("https://us-central1-labo-corentine.cloudfunctions.net/beat");
 				HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 				con.setRequestMethod("POST");
 				// con.setRequestProperty("User-Agent", USER_AGENT);
